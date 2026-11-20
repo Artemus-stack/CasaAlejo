@@ -50,7 +50,7 @@
     <span>Casa Alejo</span>
   </a>
   <nav class="nav__links" id="navLinks" aria-label="Primary">
-    <a href="#menu">Menu</a>
+    <a href="menu.html">Menu</a>
     <a href="#about">About Us</a>
     <a href="#careers">Careers</a>
     <a href="#faq">FAQ</a>
@@ -74,7 +74,7 @@
       <h1 class="hero__title"><span class="line"><span>Cocina con <em>alma.</em></span></span></h1>
       <p class="hero__sub">Slow-simmered birria, a lively bar and a seat saved for you, in the heart of Emma Avenue.</p>
       <div class="hero__actions">
-        <a class="btn" href="#menu"><span>See the menu</span></a>
+        <a class="btn" href="menu.html"><span>View the menu</span></a>
         <a class="btn btn--ghost" href="https://maps.app.goo.gl/HfRPFYgy8SXQbZ426" target="_blank" rel="noopener"><span>Get directions</span></a>
       </div>
     </div>
@@ -100,26 +100,26 @@
       <ol class="birria__grid">
         <li class="card" data-reveal>
           <span class="card__no">01</span>
-          <h3>Quesabirria</h3>
-          <p>Three corn tortillas bathed in birria juice, filled with mozzarella, birria, onion and cilantro. Consommé on the side for dipping.</p>
+          <h3>Quesabirria <span class="card__price">15</span></h3>
+          <p>Three corn tortillas marinated in birria broth, filled with melted mozzarella and tender birria. Warm consomé, onions and cilantro on the side.</p>
           <span class="card__tag">The one to start with</span>
         </li>
         <li class="card" data-reveal>
           <span class="card__no">02</span>
-          <h3>Pizzabirria</h3>
-          <p>Birria and melted cheese pressed between crisp tortillas and cut like a pie. Made for the middle of the table.</p>
+          <h3>Pizzabirria <span class="card__price">18</span></h3>
+          <p>Two 10-inch flour tortillas marinated in birria broth, filled with melted cheese, tender birria, cilantro and onions. Consomé for dipping.</p>
           <span class="card__tag">To share</span>
         </li>
         <li class="card" data-reveal>
           <span class="card__no">03</span>
-          <h3>Birriaramen</h3>
-          <p>Ramen noodles swimming in our birria consommé, finished with onion and cilantro. Comfort, twice over.</p>
+          <h3>Birriaramen <span class="card__price">16</span></h3>
+          <p>Ramen noodles simmered in rich birria broth, topped with tender birria, with fresh diced onions, cilantro and a lime wedge.</p>
           <span class="card__tag">By the bowl</span>
         </li>
         <li class="card" data-reveal>
           <span class="card__no">04</span>
-          <h3>By the pound</h3>
-          <p>Birria in its purest form, with consommé, cilantro, onion and eight homemade corn tortillas. Build your own.</p>
+          <h3>By the pound <span class="card__price">25</span></h3>
+          <p>A full pound of tender birria with warm consommé, diced onions, cilantro, local corn tortillas and house salsas.</p>
           <span class="card__tag">For the purist</span>
         </li>
       </ol>
@@ -135,10 +135,10 @@
           <p class="label" data-reveal>El menú</p>
           <h2 class="display" data-reveal><span class="line"><span>From our kitchen</span></span> <span class="line"><span><em>to your table.</em></span></span></h2>
         </div>
-        <div class="bowl" data-reveal aria-label="Make anything on the menu a bowl">
+        <div class="bowl" data-reveal role="img" aria-label="Don Alejo Style: make any dish with ribeye for 5 dollars more">
           <svg viewBox="0 0 200 200" aria-hidden="true">
             <defs><path id="bowlPath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
-            <text><textPath href="#bowlPath" textLength="484">MAKE IT A BOWL ✦ ANY DISH ON THE MENU ✦ </textPath></text>
+            <text><textPath href="#bowlPath" textLength="484">DON ALEJO STYLE ✦ MAKE IT RIBEYE +$5 ✦ </textPath></text>
           </svg>
           <img src="assets/logo/skull-mark.webp" alt="" width="60" height="68" loading="lazy">
         </div>
@@ -146,39 +146,46 @@
 
       <div class="tabs" role="tablist" aria-label="Menu sections" data-reveal>
         <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-birria" id="tab-birria">Birria</button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-favoritos" id="tab-favoritos" tabindex="-1">Favoritos</button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-clasicos" id="tab-clasicos" tabindex="-1">Clásicos</button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-bar" id="tab-bar" tabindex="-1">La Barra</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-especialidades" id="tab-especialidades" tabindex="-1">Especialidades</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-botanas" id="tab-botanas" tabindex="-1">Botanas</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-postres" id="tab-postres" tabindex="-1">Postres</button>
       </div>
 
       <div class="panels" data-reveal>
         <div class="panel is-active" role="tabpanel" id="panel-birria" aria-labelledby="tab-birria">
-          <article class="dish"><h3>Quesabirria <small>House signature</small></h3><p>Three corn tortillas marinated in birria juice, stuffed with mozzarella, birria, onion and cilantro. Served with consommé.</p></article>
-          <article class="dish"><h3>Pizzabirria</h3><p>Our birria and melted cheese between crisp tortillas, sliced to share.</p></article>
-          <article class="dish"><h3>Birriaramen</h3><p>Ramen noodles in birria consommé with onion and cilantro.</p></article>
-          <article class="dish"><h3>Birria by the Pound</h3><p>With consommé, cilantro, onion and eight homemade corn tortillas.</p></article>
+          <article class="dish"><h3>Quesabirria <small>House signature</small><span class="dish__price">15</span></h3><p>Three corn tortillas marinated in birria broth, filled with melted mozzarella and tender birria. Served with a side of warm consomé, onions and cilantro.</p></article>
+          <article class="dish"><h3>Pizzabirria<span class="dish__price">18</span></h3><p>Two 10" flour tortillas marinated in birria broth, filled with melted cheese, tender birria, cilantro and onions. Served with a side of warm consomé.</p></article>
+          <article class="dish"><h3>Birriaramen<span class="dish__price">16</span></h3><p>Ramen noodles simmered in rich birria broth, topped with tender birria. Served with fresh diced onions, cilantro and a lime wedge.</p></article>
+          <article class="dish"><h3>Birria by the Pound<span class="dish__price">25</span></h3><p>One pound of tender birria, served with warm consommé, fresh diced onions, cilantro, local corn tortillas and house salsas.</p></article>
         </div>
-        <div class="panel" role="tabpanel" id="panel-favoritos" aria-labelledby="tab-favoritos" hidden>
-          <article class="dish"><h3>Flautas Dip <small>Guest favorite</small></h3><p>Crisp flautas meet warm, melted cheese dip. Listed as a starter, ordered as dinner. Ask for it with birria.</p></article>
-          <article class="dish"><h3>Enchiladas Blancas</h3><p>Three enchiladas filled with shredded chicken, topped with cilantro, queso fresco, cheese sauce and sour cream.</p></article>
-          <article class="dish"><h3>Arrachera</h3><p>Skirt steak off the grill, the plate regulars come back for.</p></article>
-          <article class="dish"><h3>Arroz Alejo</h3><p>The house rice plate that carries our name.</p></article>
+        <div class="panel" role="tabpanel" id="panel-especialidades" aria-labelledby="tab-especialidades" hidden>
+          <article class="dish"><h3>Arroz Alejo<span class="dish__price">13</span></h3><p>A bed of rice topped with fajita-style steak, chicken, or both, finished with cheese sauce. Add shrimp for 3.</p></article>
+          <article class="dish"><h3>Grilled Shrimp Tacos<span class="dish__price">17</span></h3><p>Four shrimp tacos on corn or flour tortillas with house-made poblano sauce, lettuce, pico de gallo and queso fresco.</p></article>
+          <article class="dish"><h3>Pollo Alejo<span class="dish__price">18</span></h3><p>Grilled chicken fillet with sautéed onions and peppers, four bacon-wrapped shrimp, and poblano or cheese sauce. With rice, house salad and tortillas.</p></article>
+          <article class="dish"><h3>Arrachera<span class="dish__price">24</span></h3><p>Alejo’s traditional carne asada: grilled skirt steak with fresh lime and cilantro, beans, grilled spring onions, jalapeño, avocado salsa and warm tortillas.</p></article>
+          <article class="dish"><h3>Casa Burrito<span class="dish__price">18</span></h3><p>Our biggest tortilla, packed with French fries, fajita-style steak or chicken, mozzarella, pico, guacamole and sour cream, smothered in cheese sauce.</p></article>
+          <article class="dish"><h3>Carnitas<span class="dish__price">18</span></h3><p>Marinated pork, slow-cooked until tender and golden-crispy. With rice, beans, house salad, pickled red onions, avocado salsa and warm tortillas.</p></article>
         </div>
-        <div class="panel" role="tabpanel" id="panel-clasicos" aria-labelledby="tab-clasicos" hidden>
-          <article class="dish"><h3>Tacos</h3><p>The classics, on warm tortillas. Ask your server about today's fillings.</p></article>
-          <article class="dish"><h3>Enchiladas</h3><p>Rolled, sauced and baked the way you remember them.</p></article>
-          <article class="dish"><h3>Fajitas</h3><p>Brought to the table sizzling, with everything you need to build your own.</p></article>
-          <article class="dish"><h3>Chimichangas</h3><p>Golden, crisp and generously filled.</p></article>
-          <article class="dish"><h3>Quesadillas</h3><p>Griddled until the cheese gives up. Add birria if you know what's good.</p></article>
-          <article class="dish"><h3>Cheese Dips</h3><p>For the chips that land on your table the moment you sit down.</p></article>
+        <div class="panel" role="tabpanel" id="panel-botanas" aria-labelledby="tab-botanas" hidden>
+          <article class="dish"><h3>Cheese Dip<span class="dish__price">6 / 9</span></h3><p>Small or large. Add chorizo or beans for 2.</p></article>
+          <article class="dish"><h3>Guacamole Casero<span class="dish__price">11</span></h3><p>Our house-made guacamole.</p></article>
+          <article class="dish"><h3>Flautas Dip<span class="dish__price">10</span></h3><p>Substitute birria for 3.</p></article>
+          <article class="dish"><h3>Queso Fundido<span class="dish__price">9</span></h3><p>Add chorizo or mushrooms for 2, both for 3, or alambre (steak, chorizo, onions, bell peppers) for 4.</p></article>
+          <article class="dish"><h3>Shrimp Ceviche <small>Saturday only</small><span class="dish__price">16</span></h3><p>Available Saturdays only.</p></article>
+          <article class="dish"><h3>Cocktail de Camaron <small>Fri – Sun</small><span class="dish__price">16</span></h3><p>Available Friday, Saturday and Sunday only.</p></article>
         </div>
-        <div class="panel" role="tabpanel" id="panel-bar" aria-labelledby="tab-bar" hidden>
-          <article class="dish"><h3>Margaritas</h3><p>Shaken to order at our full bar. Pull up a stool and tell us how you like yours.</p></article>
-          <article class="dish"><h3>Cerveza</h3><p>Cold beer, the natural partner to a plate of birria.</p></article>
-          <article class="dish"><h3>Cocktails &amp; Spirits</h3><p>A full bar means the classics are covered. Ask what the bartender is pouring tonight.</p></article>
+        <div class="panel" role="tabpanel" id="panel-postres" aria-labelledby="tab-postres" hidden>
+          <article class="dish"><h3>Sopapilla Nachos<span class="dish__price">9</span></h3><p>Puff pastry nachos coated in cinnamon sugar, served with ice cream topped with lechera, chocolate and whipped cream.</p></article>
+          <article class="dish"><h3>Churros<span class="dish__price">8</span></h3><p>Fried pastry sticks coated in cinnamon sugar, served with ice cream topped with lechera, chocolate and whipped cream.</p></article>
+          <article class="dish"><h3>Tres Leches Cheesecake<span class="dish__price">9</span></h3><p>Decadent cheesecake between two slices of tres leches cake, topped with a chocolate shell and drizzled with lechera.</p></article>
         </div>
       </div>
-      <p class="menu__note" data-reveal>Our menu changes with the season. For today's full menu and prices, ask in house or call <a href="tel:+14793657222">(479) 365-7222</a>.</p>
+      <div class="menu__cta" data-reveal>
+        <a class="btn" href="menu.html"><span>View the full menu</span></a>
+        <a class="btn btn--ghost" href="assets/menu/casa-alejo-menu.pdf" download><span>Download PDF</span></a>
+        <a class="link" href="https://www.doordash.com/store/casa-alejo-springdale-24533513/18506643/" target="_blank" rel="noopener">Order on DoorDash</a>
+      </div>
+      <p class="menu__note" data-reveal>Also on the menu: enchiladas, burritos, quesadillas, fajitas, nachos, tacos de la calle and chimichangas. Prices are subject to change.</p>
     </div>
   </section>
 
@@ -257,8 +264,8 @@
           <div><p>A celebratory Mexican stew of adobo-marinated meat, slow cooked in a broth of dried chiles, herbs and spices. We make ours with beef, and that broth becomes the consommé you dip everything into.</p></div>
         </details>
         <details data-reveal>
-          <summary>Can I really make anything a bowl?</summary>
-          <div><p>Yes. Nearly any dish on the menu can be served as a bowl. Just ask your server.</p></div>
+          <summary>What does “Don Alejo Style” mean?</summary>
+          <div><p>It is our signature move: make any dish with ribeye for $5 more. Availability is limited, and it does not apply to fajitas.</p></div>
         </details>
         <details data-reveal>
           <summary>Do you have a bar and a patio?</summary>
@@ -266,7 +273,7 @@
         </details>
         <details data-reveal>
           <summary>Can I order to go, or bring a big group?</summary>
-          <div><p>Call us at (479) 365-7222 for to-go orders. For larger groups, a call ahead helps us have a table ready for you.</p></div>
+          <div><p>Yes. Order for pickup or delivery on <a href="https://www.doordash.com/store/casa-alejo-springdale-24533513/18506643/" target="_blank" rel="noopener">DoorDash</a>, or call us at (479) 365-7222. For larger groups, a call ahead helps us have a table ready for you.</p></div>
         </details>
         <details data-reveal>
           <summary>Is there another Casa Alejo?</summary>
@@ -309,7 +316,7 @@
   <div class="wrap">
     <img class="footer__logo" src="assets/logo/logo.webp" alt="Casa Alejo" width="1670" height="960" loading="lazy">
     <nav class="footer__links" aria-label="Footer">
-      <a href="#menu">Menu</a><a href="#about">About Us</a><a href="#careers">Careers</a><a href="#faq">FAQ</a><a href="#visit">Visit</a>
+      <a href="menu.html">Full Menu</a><a href="assets/menu/casa-alejo-menu.pdf" download>Menu PDF</a><a href="#about">About Us</a><a href="#careers">Careers</a><a href="#faq">FAQ</a><a href="#visit">Visit</a>
     </nav>
     <p class="footer__fine">© <span id="year">2026</span> Casa Alejo · Downtown Springdale, Arkansas · Also in downtown Rogers</p>
   </div>
